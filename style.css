@@ -16,17 +16,58 @@
 }
 
 .sidebar{
-    background: rgb(0, 238, 255);
     grid-area: sidebar;
+    background-color: #22c55e;
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr;
+}
+
+.sidebar h1{
+    color: white;
+    font-size: 40px;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leaf{
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(20%) hue-rotate(302deg) brightness(105%) contrast(105%);
+}
+
+.sidebar-nav-buttons a{
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.sidebar-nav-buttons a:hover{
+    background-color: #16a34a;
+}
+
+.sidebar-nav-buttons h2{
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar-nav-buttons img{
+    height: 25px;
+    width: 25px;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(20%) hue-rotate(302deg) brightness(105%) contrast(105%);
+    padding-right: 10px;
 }
 
 .header{
-    background: rgb(0, 255, 98);
     grid-area: header;
 }
 
 .main{
-    background: rgb(225, 0, 255);
     grid-area: main;
-
 }
